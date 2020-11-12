@@ -24,3 +24,42 @@ GET
 /get_meta_data/{module}/{screen}
 Response:
 Type: JSON
+
+Example:
+# http://localhost:8000/v1/get-meta-data/finance/collect
+Response:
+{
+    "searchApllicationId": {
+        "type": "Textfield",
+        "props": {
+            "label": "application id",
+            "required": true
+        }
+    }
+}
+Status: 200
+
+# http://localhost:8000/v1/get-meta-data/tradelicense/apply
+Response:
+{
+    "applytradeName": {
+        "type": "Textfield",
+        "props": {
+            "label": "trade name",
+            "required": true
+        }
+    },
+    "applyTradeType": {
+        "type": "Select",
+        "props": {
+            "label": "trade type",
+            "option": [
+                {
+                    "name": "goods",
+                    "code": "goods"
+                }
+            ]
+        }
+    }
+}
+Status: 200
