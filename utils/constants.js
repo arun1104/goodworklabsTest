@@ -1,0 +1,22 @@
+'use strict';
+module.exports = {
+  DEV_ENV: 'dev',
+  PORT: 8002,
+  ENCODING_FORMAT_UTF: 'utf8',
+  SWAGGER_FILE_NAME: 'swagger.yaml',
+  SERVER_RUNNING_LOG: 'Serving running on port',
+  PUBLIC_FOLDER: 'public',
+  SRC_FOLDER: 'src',
+  JSON_FILE_TYPE: 'json',
+  UI_CONFIG_FOLDER: 'ui-config',
+  SPECIFICATION_FOLDER: 'specification',
+  LOG_LEVEL_INFO: 'info',
+  LOG_LEVEL_ERROR: 'error',
+  METADATA_RELATIVE_PATH_FROM_CONTROLLERS: '..',
+  FILE_NOT_FOUND: 'File not found',
+  HTTP_STATUS_OK: 200,
+  HTTP_STATUS_NOT_FOUND: 404,
+  HTTP_STATUS_INTERNAL_SERVER_ERROR: 500,
+  INVALID_JSON: 'Invalid json file',
+  NO_CONTENT: 'Empty file',
+};

@@ -1,0 +1,38 @@
+swagger: '2.0'
+info:
+  version: '2.0'
+  title: 'Dynamic UI'
+  description: 'REST APIs for screen management'
+  contact: {}
+host: 'www.goodworklabs.com'
+basePath: /v1
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /get-meta-data/{module}/{screen}:
+    get:
+      tags:
+      - "Metadata"
+      description: 'Configure user notification'
+      summary: 'get metadata of modules'
+      operationId: 'getMetadata'
+      deprecated: false
+      security: []
+      produces:
+        - application/json
+      parameters:
+        - name: module
+          in: path
+          required: true
+          type: 'string'
+        - name: screen
+          in: path
+          required: true
+          type: 'string'
+      responses:
+        '200':
+          description: ''
